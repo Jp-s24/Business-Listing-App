@@ -40,7 +40,7 @@ Displays a list of all business listings created locally.
 
 <p align="center" style="margin-top: 0;">
   <img 
-    src="https://github.com/Jp-s24/Business-Listing-App/blob/main/assets/images/create-a-business-listing-page.jpg" 
+    src="https://github.com/Jp-s24/Business-Listing-App/blob/main/assets/images/view-all-listings-page-updated.jpg" 
     alt="Listings Page" 
     height="600"
     style="border: 2px solid #ddd; border-radius: 10px; padding: 5px; display: block; margin: 0 auto;"
