@@ -78,7 +78,7 @@ cd Business-Listing-App
 npm install
 ```
 
-4. Start the development server:
+4. Start the development server
 
 ```sh
 npx expo start
