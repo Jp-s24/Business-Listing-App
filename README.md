@@ -112,7 +112,7 @@ npx expo start
 6. Scan the QR code and open the Expo Go App to view the app
 
 ## Design Decisions 
-- Built using React Native with Expo for fast cross-platform development for IOS AND Android
+- Built using React Native with Expo for fast cross-platform development for IOS and Android
 - Used React Navigation (stack navigator) to handle navigation between screens
 - Managed state using React useState in the root App component to keep the MVP simple and lightweight
 - Created a reusable BusinessCard component to keep UI modular and clean
@@ -127,5 +127,5 @@ npx expo start
 
 ## What I Would Do in v2
 - Add persistent storage using AsyncStorage or a backend API
-- Implement edit and delete functionality for business listings and improve UI and UX with advanced validation. 
+- Implement edit and delete functionality for business listings and improve UI and UX with advanced validation
 
