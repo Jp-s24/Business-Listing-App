@@ -35,6 +35,17 @@ Below are some sample screenshots of the mobile application.
   />
 </p>
 
+### Business Listing Validation
+<p align="center" style="margin: 0;">
+  <img 
+    src="https://github.com/Jp-s24/Business-Listing-App/blob/main/assets/images/Business-listing-validation.jpg" 
+    alt="Create Business Page" 
+    height="600"
+    style="border: 2px solid #ddd; border-radius: 10px; padding: 5px; display: block; margin: 0 auto;"
+  />
+</p>
+
+
 ### View All Listings Page
 Displays a list of all business listings created locally.
 
