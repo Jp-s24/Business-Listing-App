@@ -7,6 +7,7 @@ import {
   TextInput,
   TouchableOpacity,
   View,
+  Alert,
 } from "react-native";
 
 export default function CreateBusinessScreen({
@@ -15,7 +16,6 @@ export default function CreateBusinessScreen({
   setBusinesses,
 }) {
   // Local state to store the business name input value
-  // This allows the input field to be controlled by React state
   const [name, setName] = useState("");
 
   // Local state to store the business category input value
@@ -26,8 +26,14 @@ export default function CreateBusinessScreen({
 
   // Function responsible for creating and adding a new business entry
   const addBusiness = () => {
-    // Basic validation to prevent empty submissions
-    if (!name.trim()) return;
+    // Validation: prevent empty business name submission
+    if (!name.trim()) {
+      Alert.alert(
+        "Missing Business Name",
+        "Please enter a business name before continuing.",
+      );
+      return;
+    }
 
     // Create a new business object using current input values
     const newBusiness = {
@@ -38,7 +44,6 @@ export default function CreateBusinessScreen({
     };
 
     // Update global state by adding the new business to existing array
-    // This keeps all business entries in a shared parent state
     setBusinesses([...businesses, newBusiness]);
 
     // Reset all input fields after successful submission
@@ -57,7 +62,6 @@ export default function CreateBusinessScreen({
       <Text style={styles.title}>Enter Business Details</Text>
 
       {/* Input field for entering the business name */}
-      {/* Controlled component tied to "name" state */}
       <TextInput
         placeholder="Business Name"
         value={name}
@@ -66,7 +70,6 @@ export default function CreateBusinessScreen({
       />
 
       {/* Input field for entering business category */}
-      {/* Helps classify the type of business being created */}
       <TextInput
         placeholder="Category"
         value={category}
@@ -74,8 +77,7 @@ export default function CreateBusinessScreen({
         style={styles.input}
       />
 
-      {/* Multiline input for detailed business description */}
-      {/* Styled separately to allow larger text input area */}
+      {/* Multiline input for business description */}
       <TextInput
         placeholder="Short Description"
         value={description}
@@ -84,14 +86,12 @@ export default function CreateBusinessScreen({
         multiline
       />
 
-      {/* Primary action button that triggers business creation logic */}
-      {/* Uses TouchableOpacity for better styling control than default Button */}
+      {/* Primary action button */}
       <TouchableOpacity style={styles.addButton} onPress={addBusiness}>
         <Text style={styles.buttonText}>Add Business</Text>
       </TouchableOpacity>
 
-      {/* Secondary navigation button to view all business listings */}
-      {/* Direct navigation without submitting form */}
+      {/* Secondary navigation button */}
       <TouchableOpacity
         style={styles.listButton}
         onPress={() => navigation.navigate("Listings")}
@@ -104,21 +104,18 @@ export default function CreateBusinessScreen({
 
 // Styling definitions for layout and UI components
 const styles = StyleSheet.create({
-  // Main screen container
   container: {
     flex: 1,
     padding: 20,
     backgroundColor: "#fff",
   },
 
-  // Screen title styling
   title: {
     fontSize: 18,
     fontWeight: "600",
     marginBottom: 15,
   },
 
-  // Default styling for input fields
   input: {
     borderWidth: 1,
     borderColor: "#ddd",
@@ -128,13 +125,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#f9f9f9",
   },
 
-  // Extended styling for multiline description input
   textArea: {
     height: 100,
-    textAlignVertical: "top", // ensures text starts from top (Android fix)
+    textAlignVertical: "top",
   },
 
-  // Primary action button styling for (Add Business)
   addButton: {
     backgroundColor: "#007BFF",
     padding: 12,
@@ -143,7 +138,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
 
-  // Secondary button styling for (View Listings)
   listButton: {
     backgroundColor: "#333",
     padding: 12,
@@ -152,7 +146,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
 
-  // Text styling for both buttons
   buttonText: {
     color: "#fff",
     fontWeight: "600",
