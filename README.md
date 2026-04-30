@@ -63,7 +63,7 @@ nvm use 20.20.0
 ```
 
 
-1. Clone the repository:
+1. Clone the repository
 ```sh
 git clone https://github.com/your-username/business-listing-app.git](https://github.com/Jp-s24/Business-Listing-App.git
 ```
