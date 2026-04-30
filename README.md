@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# Business Listing & Discovery App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple mobile application built with React Native (Expo) that allows users to create and view small business listings. This project was completed with a focus on MVP design, usability, and clean state management.
 
-## Get started
+---
 
-1. Install dependencies
+## 💻 Technologies Used
 
-   ```bash
-   npm install
-   ```
+This project is a frontend-only mobile application built with React Native (Expo). It focuses on MVP functionality and client-side state management.
 
-2. Start the app
+### Frontend
+- React Native (Expo)
+- React Navigation
+- JavaScript 
 
-   ```bash
-   npx expo start
-   ```
+### State Management
+- React useState (in-memory state for storing business listings)
 
-In the output, you'll find options to open the app in a
+### Development Tools
+- Expo CLI
+- Node.js
+- npm
+- Git & GitHub
+  
+## 📷 Pictures
+Below are some sample screenshots of the mobile application.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Create a Business Listing Page
+<p align="center" style="margin: 0;">
+  <img 
+    src="https://github.com/Jp-s24/Business-Listing-App/blob/main/assets/images/create-a-business-listing-page.jpg" 
+    alt="Create Business Page" 
+    height="600"
+    style="border: 2px solid #ddd; border-radius: 10px; padding: 5px; display: block; margin: 0 auto;"
+  />
+</p>
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### View All Listings Page
+Displays a list of all business listings created locally.
 
-## Get a fresh project
+<p align="center" style="margin-top: 0;">
+  <img 
+    src="https://github.com/Jp-s24/Business-Listing-App/blob/main/assets/images/view-all-listings-page.jpg" 
+    alt="Listings Page" 
+    height="600"
+    style="border: 2px solid #ddd; border-radius: 10px; padding: 5px; display: block; margin: 0 auto;"
+  />
+</p>
 
-When you're ready, run:
+## How to Run the App
 
-```bash
-npm run reset-project
+### Node Version Requirement
+
+This project requires Node.js **v20.0.0 or higher**.
+
+If you do not have NVM installed, ensure you are running Node.js version 20 or above before installing dependencies.
+
+If you are using NVM (Node Version Manager), you can install and switch to the correct version using:
+
+```sh
+nvm install 20.20.0
+nvm use 20.20.0
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+1. Clone the repository:
+```sh
+git clone https://github.com/your-username/business-listing-app.git](https://github.com/Jp-s24/Business-Listing-App.git
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+2. Navigate to the appropriate directory in the terminal
+```sh
+cd Business-Listing-App
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. Install dependencies
+```sh
+npm install
+```
 
-## Join the community
+4. Start the development server:
 
-Join our community of developers creating universal apps.
+```sh
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+5. Download the Expo Go App and ensure it is installed on your mobile device.
+
+6. Scan the QR code and open the Expo Go App to view the app
+
+## Design Decisions 
+- Built using React Native with Expo for fast cross-platform development for IOS AND Android
+- Used React Navigation (stack navigator) to handle navigation between screens
+- Managed state using React useState in the root App component to keep the MVP simple and lightweight
+- Created a reusable BusinessCard component to keep UI modular and clean
+- Focused on a minimal UI to prioritize functionality and user flow
+
+## Trade-offs (Due to Time) 
+- Minimal validation (only required business name field enforced)
+- Used in-memory state only, meaning data resets on refresh
+- No backend or database integration to stay within the 3–4 hour time constraint
+- No persistent storage (AsyncStorage) implemented
+- Limited UI enhancements such as animations, sorting, or advanced styling
+
+## What I Would Do in v2
+- Add persistent storage using AsyncStorage or a backend API
+- Implement edit and delete functionality for business listings and improve UI and UX with advanced validation. 
+
