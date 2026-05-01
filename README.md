@@ -74,7 +74,7 @@ Displays a single search bar that filters the list by business name
 
 This project requires Node.js **v20.0.0 or higher**.
 
-If you do not have NVM installed, ensure you are running Node.js version 20 or above before installing dependencies.
+If you do not have NVM installed, ensure you are running Node.js version 20 or above before installing dependencies
 
 If you are using NVM (Node Version Manager), you can install and switch to the correct version using:
 
@@ -105,7 +105,7 @@ npm install
 npx expo start
 ```
 
-5. Download the Expo Go App and ensure it is installed on your mobile device.
+5. Download the Expo Go App and ensure it is installed on your mobile device
 
 6. Scan the QR code and open the Expo Go App to view the app
 
@@ -113,7 +113,7 @@ npx expo start
 - Built using React Native with Expo for fast cross-platform development for IOS and Android
 - Used React Navigation (stack navigator) to handle navigation between screens
 - Managed state using React useState in the root App component to keep the MVP simple and lightweight
-- Created a reusable BusinessCard component to keep UI modular and clean
+- Created a reusable BusinessCard component to keep UI consistent and clean
 - Focused on a minimal UI to prioritize functionality and user flow
 
 ## Trade-offs (Due to Time) 
