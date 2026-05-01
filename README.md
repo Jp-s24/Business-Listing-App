@@ -1,6 +1,6 @@
 # Business Listing & Discovery App
 
-A simple mobile application built with React Native (Expo) that allows users to create and view small business listings. This project was completed with a focus on MVP design, usability, and clean state management.
+A simple mobile application built with React Native that allows users to create and view small business listings. This project was completed with a focus on MVP design, usability, and clean state management.
 
 ---
 
