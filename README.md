@@ -6,8 +6,6 @@ A simple mobile application built with React Native (Expo) that allows users to 
 
 ## 💻 Technologies Used
 
-This project is a frontend-only mobile application built with React Native (Expo). It focuses on MVP functionality and client-side state management.
-
 ### Frontend
 - React Native (Expo)
 - React Navigation
